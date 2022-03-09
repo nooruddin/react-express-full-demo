@@ -1,0 +1,14 @@
+{
+  "name": "react-express-full-stack-demo",
+  "version": "1.0.0",
+  "description": "demo app",
+  "scripts": {
+    "postinstall": "(cd client && npm install); (cd server && npm install)",
+    "client": "npm start --prefix ./client",
+    "server": "nodemon ./server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
